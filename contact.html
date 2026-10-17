@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+     <header>
+        <h1 class="site-title">Helios & Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Off-campus living made simple. Find affordable semester leases, shared rooms, and apartments within easy reach of your classes.</p>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Student Housing Inquiry</h2>
+
+            <form id="inquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="studentName">Full Name:</label>
+                    <input type="text" id="studentName" name="studentName" autocomplete="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="studentEmail">College Email:</label>
+                    <input type="email" id="studentEmail" name="studentEmail" autocomplete="email" required placeholder="name@student.edu">
+                </div>
+
+                <div class="form-group">
+                    <label for="propertySelect">Interested Community:</label>
+                    <select id="propertySelect" name="propertySelect" required>
+                        <option value="">-- Select a Community --</option>
+                        <option value="Cortland Nona">Cortland Nona ($695/mo per room)</option>
+                        <option value="Ascend Nona West">Ascend Nona West ($1,150/mo per unit)</option>
+                        <option value="Dwell Nona Place">Dwell Nona Place ($780/mo per room)</option>
+                        <option value="The Village at Science Drive">The Village at Science Drive ($650/mo per room)</option>
+                        <option value="The Verge">The Verge ($600/mo per room)</option>
+                        <option value="Current Orlando">Current Orlando ($1,200/mo per unit)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentMessage">Questions or Move-In Needs:</label>
+                    <textarea id="studentMessage" name="studentMessage" rows="4" required placeholder="Tell us about your semester lease needs..."></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">Submit Inquiry</button>
+                <div id="formFeedback" role="status" aria-live="polite"></div>
+            </form>
+
+            <img class="contact-image" src="https://images.unsplash.com/photo-1772724316741-d71af45b5558?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Students embracing their new living space" width="1200" height="800" fetchpriority="high">
+
+
+        </section>
+    </main>
+
+     <footer>
+        <p>Email:
+            <a href="mailto:contact@heliosco.com">contact@heliosco.com</a>
+            |
+            Phone:
+            <a href="tel:+13042999912">(304) 299-9912</a>
+        </p>
+        <ul class="social-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+        <p>&copy; 2026 Helios & Co. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
